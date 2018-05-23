@@ -9,12 +9,16 @@ A guide to set up NiFi on an AWS ec2 instance
 2. Create an empty directory `nifi` and cd into it. 
 
 3. Download **nifi**, **nifi toolkit** and **nifi registry** tarballs and unzip them inside the directory:
+
+    - Links to **nifi** and **nifi toolkit** can be found here https://nifi.apache.org/download.html
+    - Links to **nifi registry** can be found here https://nifi.apache.org/registry.html
+    
     ```
-    echo "Download nifi"
+    # Download/unzip nifi
     wget http://mirror.cc.columbia.edu/pub/software/apache/nifi/1.6.0/nifi-1.6.0-bin.tar.gz && tar xvzf nifi-1.6.0-bin.tar.gz
-    echo "Download nifi toolkit"
+    # Download/unzip nifi toolkit
     wget http://apache.mirrors.tds.net/nifi/1.6.0/nifi-toolkit-1.6.0-bin.tar.gz && tar xvzf nifi-toolkit-1.6.0-bin.tar.gz
-    echo "Download nifi registry"
+    # Download/unzip nifi registry
     wget http://mirror.metrocast.net/apache/nifi/nifi-registry/nifi-registry-0.1.0/nifi-registry-0.1.0-bin.tar.gz && tar xvzf nifi-registry-0.1.0-bin.tar.gz
     ```
     
