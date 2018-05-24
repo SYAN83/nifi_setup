@@ -37,4 +37,17 @@ A guide to set up NiFi on an AWS ec2 instance
 
 ## Setting Up a Secure Apache NiFi Registry
 
+  Run `./nifi-toolkit-1.6.0/bin/tls-toolkit.sh standalone -n "localhost" -C "CN=sys_admin, OU=NIFI" -o target` to generate configuration and certificate files. In **target** directory you will have:
+  
+    target/
+    ├── CN=sys_admin_OU=NIFI.p12
+    ├── CN=sys_admin_OU=NIFI.password
+    ├── localhost
+    │   ├── keystore.jks
+    │   ├── nifi.properties
+    │   └── truststore.jks
+    ├── nifi-cert.pem
+    └── nifi-key.key
+    
+
 ## Setting Up a Secure NiFi to Integrate with a Secure NiFi Registry
